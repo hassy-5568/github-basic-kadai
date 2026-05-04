@@ -1,0 +1,31 @@
+PS D:\趣味\プログラミング\samurai\gitkadai> mkdir git_challenge
+
+
+    ディレクトリ: D:\趣味\プログラミング\samurai\gitkadai
+
+
+Mode                 LastWriteTime         Length Name                                                                                                                         
+----                 -------------         ------ ----                                                                                                                         
+d-----        2026/05/04     17:48                git_challenge                                                                                                                
+
+
+PS D:\趣味\プログラミング\samurai\gitkadai> cd git_challenge
+PS D:\趣味\プログラミング\samurai\gitkadai\git_challenge> echo "Hello, world!" >>  hello_world.txt
+PS D:\趣味\プログラミング\samurai\gitkadai\git_challenge> git init 
+Initialized empty Git repository in D:/趣味/プログラミング/samurai/gitkadai/git_challenge/.git/
+PS D:\趣味\プログラミング\samurai\gitkadai\git_challenge> git add hello_world.txt
+PS D:\趣味\プログラミング\samurai\gitkadai\git_challenge> git commit -m "hello_world.txtを追加"
+[main (root-commit) ed264e5] hello_world.txtを追加
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt
+PS D:\趣味\プログラミング\samurai\gitkadai\git_challenge> echo "こんにちは、世界！" >> hello_world.txt
+PS D:\趣味\プログラミング\samurai\gitkadai\git_challenge> git add hello_world.txt        
+PS D:\趣味\プログラミング\samurai\gitkadai\git_challenge> git commit -m "日本語訳を追記"
+[main d834c48] 日本語訳を追記
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS D:\趣味\プログラミング\samurai\gitkadai\git_challenge> git log --online
+fatal: unrecognized argument: --online
+PS D:\趣味\プログラミング\samurai\gitkadai\git_challenge> git log --oneline
+d834c48 (HEAD -> main) 日本語訳を追記
+ed264e5 hello_world.txtを追加
+PS D:\趣味\プログラミング\samurai\gitkadai\git_challenge> 
